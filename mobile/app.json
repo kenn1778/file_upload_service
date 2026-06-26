@@ -1,0 +1,27 @@
+{
+  "expo": {
+    "name": "FileUpload",
+    "slug": "file-upload",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#4F46E5"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fileupload.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#4F46E5"
+      },
+      "package": "com.fileupload.app"
+    },
+    "plugins": [
+      "expo-document-picker"
+    ]
+  }
+}
