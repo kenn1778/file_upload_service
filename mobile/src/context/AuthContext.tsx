@@ -37,7 +37,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [, response, promptAsync] = Google.useAuthRequest({
     clientId: CLIENT_ID,
     scopes: ['openid', 'profile', 'email'],
-    redirectUri: makeRedirectUri({ useProxy: true }),
+    redirectUri: makeRedirectUri(),
   });
 
   useEffect(() => {
@@ -86,7 +86,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const signInWithGoogle = useCallback(async () => {
     try {
-      await promptAsync({ useProxy: true });
+      await promptAsync();
     } catch (err) {
       console.error('Google sign-in error:', err);
       Alert.alert('Sign In Failed', 'Could not sign in with Google');
