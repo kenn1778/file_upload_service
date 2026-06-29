@@ -12,6 +12,10 @@ const PORT = process.env.PORT || 3001;
 app.use(cors());
 app.use(express.json());
 
+app.get('/', (_req, res) => {
+  res.json({ name: 'File Upload Service', version: '1.0.0', status: 'running' });
+});
+
 app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
