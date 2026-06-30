@@ -9,7 +9,9 @@
     "splash": {
       "backgroundColor": "#4F46E5"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.fileupload.app"
@@ -22,6 +24,12 @@
     },
     "plugins": [
       "expo-document-picker"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "d3cedcb6-1855-4eb5-bbf6-33c213530bc8"
+      }
+    },
+    "owner": "kennedy177"
   }
 }
